@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "f2f6cb5d-8a43-448e-b967-1e6a70058f40",
+		"name": "NDVI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14325767"
+	},
+	"item": [
+		{
+			"name": "get map image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://178.154.192.15/getSnapshot",
+					"protocol": "http",
+					"host": [
+						"178",
+						"154",
+						"192",
+						"15"
+					],
+					"path": [
+						"getSnapshot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get NDVI image",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://178.154.192.15/getImageNDVI",
+					"protocol": "http",
+					"host": [
+						"178",
+						"154",
+						"192",
+						"15"
+					],
+					"path": [
+						"getImageNDVI"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit geojson fields",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://178.154.192.15/add?latitude=37.9018&longitude=-122.292",
+					"protocol": "http",
+					"host": [
+						"178",
+						"154",
+						"192",
+						"15"
+					],
+					"path": [
+						"add"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "37.9018"
+						},
+						{
+							"key": "longitude",
+							"value": "-122.292"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
